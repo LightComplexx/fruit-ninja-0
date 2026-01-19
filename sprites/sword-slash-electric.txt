@@ -1,0 +1,68 @@
+<HEADER>
+frames 7
+width 9
+height 7
+color blue
+slowdown 1
+</HEADER>
+<BODY>
+         
+         
+         
+         
+         
+   *.    
+ .-'     
+end
+         
+         
+         
+         
+   .**'  
+  \*.'   
+ ./'     
+end
+         
+         
+    '**' 
+ /  '**' 
+ `..**' _
+  ._.'   
+ ./'     
+end
+ -..     
+   `*`.  
+   |_**' 
+    '*\'_
+  \.**'  
+  /.'    
+ .\      
+end
+ -..     
+  _`*`.  
+   `_**' 
+    '**' 
+  \.**'  
+  .*.'   
+         
+end
+ -..     
+  \_*`.\ 
+    '**'`
+      *' 
+         
+         
+         
+end
+ -..     
+   `*`.  
+         
+         
+         
+         
+         
+end
+</BODY>
+<FOOTER>
+version 1
+</FOOTER>

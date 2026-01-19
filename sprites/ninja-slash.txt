@@ -1,0 +1,41 @@
+<HEADER>
+frames 2
+width 16
+height 13
+color white
+slowdown 0
+transparency #
+</HEADER>
+<BODY>
+      .         
+      |`.       
+      | '       
+      ' '__     
+  -'`''.====.   
+    .-'|   [|   
+       '.__.'   
+       '_|      
+         |      
+         |\_::  
+        .-.     
+       '   `.   
+      /_    |_  
+end
+                
+                
+                
+   .     __     
+   .`'-.====.   
+    '-'|   [|   
+     /''.__.'   
+    ::   /\     
+        \..'    
+      .'.\'     
+    .'.'.-.     
+  .'-' '   `.   
+      /_    |_  
+end
+</BODY>
+<FOOTER>
+version 1
+</FOOTER>
