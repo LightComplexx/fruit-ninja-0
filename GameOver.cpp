@@ -16,7 +16,7 @@
 #include "Bonus.h"
 #include "util.h"
 
-GameOver::GameOver() {
+GameOver::GameOver(bool isBonusStage) {
 
 	setType(GAMEOVER_STRING);
 	setDrawValue(false);
@@ -38,6 +38,8 @@ GameOver::GameOver() {
 	DM.shake(20, 20, 10);
 
 	LM.writeLog("GameOver::GameOver(): created");
+
+	is_bonus_stage = isBonusStage;
 }
 
 // Handle event.
@@ -65,7 +67,7 @@ int GameOver::step() {
 		df::ObjectList ol = WM.objectsOfType(POINTS_STRING);
 		if (ol.getCount() > 0 && (dynamic_cast <Points*> (ol[0]))) {
 			Points* p_p = dynamic_cast <Points*> (ol[0]);
-			if (p_p->getValue() >= 100) {
+			if (p_p->getValue() >= 50 && !is_bonus_stage) {
 				// Create new "Bonus" object and draw text
 				Bonus* bonus_text = new Bonus();
 				bonus_text->draw();

@@ -17,9 +17,12 @@ private:
 	// Handle step events.
 	int step();
 
+	// True if bonus_stage
+	bool is_bonus_stage;
+
 public:
 	// Default constructor;
-	GameOver();
+	GameOver(bool isBonusStage = false);
 
 	// Handle events
 	int eventHandler(const df::Event* p_e) override;

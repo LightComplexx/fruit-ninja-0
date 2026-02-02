@@ -17,13 +17,16 @@ class Kudos : public df::Object {
 private:
 	int m_time_to_live;  // in ticks
 
+	// True if bonus stage
+	int is_bonus_stage;
+
 	// Handle step events.
 	int step(const df::EventStep* p_e);
 
 public:
 
 	// Constructor.
-	Kudos();
+	Kudos(bool isBonusStage = false);
 
 	// Handle events.
 	int eventHandler(const df::Event* p_e) override;

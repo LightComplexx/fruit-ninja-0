@@ -139,7 +139,6 @@ int Sword::mouse(const df::EventMouse* p_e) {
 
 // Handle keyboard event.
 int Sword::keyboard(const df::EventKeyboard* p_e) {
-
     if (p_e->getKey() == df::Keyboard::Q &&
         p_e->getKeyboardAction() == df::KEY_PRESSED) {
 

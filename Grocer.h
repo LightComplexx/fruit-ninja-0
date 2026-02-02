@@ -20,14 +20,18 @@ private:
 	int m_wave_spawn;   // current wave countdown, in ticks
 	int m_wave_end;     // current wave end, in ticks
 	float m_wave_speed; // current fruit speed, in spaces/tick
+	bool is_bonus_stage;   // bonus stage flag
 
 	// Handle step events.
 	int step(const df::EventStep* p_e);
 
+	// Deletes objects of a certain type
+	void deleteObjectsOfType(const std::string& type);
+
 public:
 
 	// Constructor.
-	Grocer();
+	Grocer(bool isBonusStage = false);
 
 	// Handle events.
 	int eventHandler(const df::Event* p_e) override;

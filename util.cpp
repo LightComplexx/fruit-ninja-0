@@ -16,6 +16,9 @@
 #include "Splash.h"
 #include "Sword.h"
 #include "Timer.h"
+#include "Ninja.h"
+#include "InputHandler.h"
+#include "InputHUD.h"
 
 ///////////////////////////////////////////////
 // Load resources (sprites, sound effects, music).
@@ -29,6 +32,12 @@ void loadResources(void) {
     for (int i = 0; i < NUM_FRUITS; i++) {
         std::string name = "sprites/" + FRUIT[i] + ".txt";
         RM.loadSprite(name, FRUIT[i]);
+    }
+
+    // Input icon sprites
+    for (int i = 0; i < NUM_ICONS; i++) {
+        std::string name = "sprites/" + INPUT_ICONS[i] + ".txt";
+        RM.loadSprite(name, INPUT_ICONS[i]);
     }
 
     // Bonus stage Ninja sprites
@@ -50,6 +59,8 @@ void loadResources(void) {
     RM.loadSound("sounds/game-over.wav", "game-over");
     RM.loadSound("sounds/impact.wav", "impact");
     RM.loadSound("sounds/beep.wav", "beep");
+    RM.loadSound("sounds/sword-slash.wav", "sword-slash");
+    RM.loadSound("sounds/electric-slash.wav", "electric-slash");
 
     for (int i = 1; i <= NUM_SPLATS; i++) {
         std::string sound = "splat-" + std::to_string(i);
@@ -77,6 +88,7 @@ void populateWorld(void) {
     new Points;
     new Sword();
     new Timer(10);
+    new InputHandler;
 }
 
 ///////////////////////////////////////////////

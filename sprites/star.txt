@@ -1,0 +1,20 @@
+<HEADER>
+frames 1
+width 11
+height 6
+color white
+slowdown 0
+transparency #
+</HEADER>
+<BODY>
+#####.#####
+#___/ \___#
+#`.     .'#
+###'.-.'###
+##'#####'##
+###########
+end
+</BODY>
+<FOOTER>
+version 1
+</FOOTER>

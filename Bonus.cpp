@@ -12,6 +12,10 @@
 #include "EventBonus.h"
 #include "Timer.h"
 #include "Grocer.h"
+#include "Ninja.h"
+#include "Sword.h"
+#include "InputHandler.h"
+#include "game.h"
 
 Bonus::Bonus() {
 	// Sets object to type Slash
@@ -39,8 +43,10 @@ Bonus::Bonus() {
 
 Bonus::~Bonus() {
 	// Repopulate world in "bonus" mode
-	new Grocer();
+	new Grocer(true);
 	new Timer(30);
+	new InputHandler(true);
+	new Ninja;
 
 	// Create "Bonus" event and send to interested Objects
 	EventBonus bonus;
