@@ -67,7 +67,7 @@ int GameOver::step() {
 		df::ObjectList ol = WM.objectsOfType(POINTS_STRING);
 		if (ol.getCount() > 0 && (dynamic_cast <Points*> (ol[0]))) {
 			Points* p_p = dynamic_cast <Points*> (ol[0]);
-			if (p_p->getValue() >= 50 && !is_bonus_stage) {
+			if (p_p->getValue() >= 1000 && !is_bonus_stage) {
 				// Create new "Bonus" object and draw text
 				Bonus* bonus_text = new Bonus();
 				bonus_text->draw();

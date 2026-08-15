@@ -42,7 +42,7 @@ const int NUM_KUDOS = 10;
 
 // Wave settings.
 const int NUM_WAVES = NUM_FRUITS;
-const int WAVE_LEN = 60;      // in ticks
+const int WAVE_LEN = 300;      // in ticks
 const int WAVE_SPAWN = 30;     // in ticks
 const float WAVE_SPEED = 0.5f; // in ticks
 const float SPEED_INC = 0.1f;  // in spaces/tick

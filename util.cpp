@@ -87,7 +87,7 @@ void populateWorld(void) {
     new Grocer();
     new Points;
     new Sword();
-    new Timer(10);
+    new Timer(50);
     new InputHandler;
 }
 
