@@ -2,14 +2,14 @@
 Adds an additional Bonus Stage to the DragonFly engine game 'Fruit Ninja' with inspiration from the Tekken series.
 ## Bonus Stage
 * If the player reaches a score of 1000 or above in the normal mode, the player will enter a bonus stage where they can control an actual Fruit Ninja to obtain extra points by slicing more fruits.
-* Fruits will fly at the player from the right side, and the player must slice using a certain input technique taken from the Tekken series: the Wind Fruit Slice!
+* Fruits will fly at the player from the right side, and the player must slice using a certain input technique taken from the Tekken series: the Wind Fruit Slice! Each fruit sliced will net 100 points.
 * This technique is performed with a Forward -> Neutral -> Down -> Down-Forward -> Slice input on the keyboard.
-* If the player presses the last 2 inputs (Down-Forward & Slice) on the exact same frame, the Fruit Ninja performs a faster, stronger Electric Wind Fruit Slice! This will trigger blue effects and an "Electric!" text popup above the Fruit Ninja.
+* If the player presses the last 2 inputs (Down-Forward & Slice) on the exact same frame, the Fruit Ninja performs a faster, stronger Electric Wind Fruit Slice that will net 1000 points! This will trigger blue effects and an "Electric!" text popup above the Fruit Ninja.
 * There is an input display on the right side that will show which buttons the player inputs and for how many frames they held it.
 
 <b>Controls (Normal):</b>
 <ul>
-    <li>Uses mouse pointer and Left Click to Slice</li>
+    <li>Use mouse to swipe fruits</li>
 </ul>
 
 <b>Controls (Bonus Stage):</b>
