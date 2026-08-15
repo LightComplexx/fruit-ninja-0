@@ -1,5 +1,8 @@
 # fruit-ninja-0
-Adds an additional Bonus Stage to the DragonFly engine game 'Fruit Ninja' with inspiration from the Tekken series.
+Adds an additional Bonus Stage to the DragonFly engine game 'Fruit Ninja' with inspiration from the Tekken series.    
+
+[Showcase Video](https://youtu.be/U9utu4Z3dI0)
+
 ## Bonus Stage
 * If the player reaches a score of 1000 or above in the normal mode, the player will enter a bonus stage where they can control an actual Fruit Ninja to obtain extra points by slicing more fruits.
 * Fruits will fly at the player from the right side, and the player must slice using a certain input technique taken from the Tekken series: the Wind Fruit Slice! Each fruit sliced will net 100 points.
